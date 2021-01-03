@@ -45,7 +45,7 @@ for (let i = 0; i < inputCopy.length; i++) {
     }
   }
   if (!broke) {
-    console.log("done", acc);
+    console.log("done", acc); ////////////////////////PART2 ///////////////////////
     break;
   }
 }
