@@ -10,7 +10,9 @@ for (line of input) {
   if (window.length < preemble) {
     window.push(Number(line));
   } else {
-    if (!window.some(num => window.includes(line - num) && num !== line / 2)) {
+    if (
+      !window.some((num) => window.includes(line - num) && num !== line / 2)
+    ) {
       num = line;
       console.log("num", line); /////////////////PART1///////////////////////
       break;
@@ -29,7 +31,7 @@ for (i = 0; i < input.length; i++) {
       break;
     } else if (sum == num) {
       found = true;
-      const clipped = input.slice(i, j + 1).map(x => Number(x));
+      const clipped = input.slice(i, j + 1).map((x) => Number(x));
       console.log("clipped", clipped);
       console.log(Math.max(...clipped) + Math.min(...clipped));
       break;
